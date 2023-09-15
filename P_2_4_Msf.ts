@@ -1,11 +1,16 @@
-function fibonacci(n: number): number {
-    console.log(`Calculando Fibonacci(${n})`);
+function fibonacci(n: number, depth: number = 0): number {
+    let tabs = "";
+    for (let i = 0; i < depth; i++) {
+        tabs += "  "; // 
+    }
+    console.log(`${tabs}Calculando Fibonacci(${n})`);
+
     if (n <= 0) {
         return 0;
     } else if (n === 1) {
         return 1;
     } else {
-        const result = fibonacci(n - 1) + fibonacci(n - 2);
+        const result = fibonacci(n - 1, depth + 1) + fibonacci(n - 2, depth + 1);
         return result;
     }
 }
