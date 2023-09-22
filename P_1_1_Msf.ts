@@ -1,21 +1,21 @@
-// a) Variável com anotação explícita de tipo numérico.
-const numero: number = 42;
+// a) Uma variável que tenha anotação explícita de tipo numérico.
+let variavelNumerica: number = 42;
 
-// b) Variável com anotação explícita de tipo string.
-const texto: string = "Olá, mundo!";
+// b) Uma variável que tenha anotação explícita de tipo string.
+let variavelString: string = "Olá, TypeScript!";
 
-// c) Variável sem anotação explícita de tipo, mas com valor lógico.
-const logico = true;
+// c) Uma variável que não tenha anotação explícita de tipo mas que receba um valor lógico.
+let variavelLogica = true;
 
-// d) Variável JSON com propriedades de tipo numérico e string.
-const pessoa = { nome: "Alice", idade: 30 };
+// d) Uma variável que seja um JSON contendo propriedades de tipo numérico e de tipo string.
+let objetoJson: { nome: string, idade: number } = { nome: "Alice", idade: 30 };
 
-// e) Array numérico com anotação explícita de tipo.
-const numeros: number[] = [1, 2, 3, 4, 5];
+// e) Um array numérico com anotação explícita de tipo.
+let arrayNumerico: number[] = [1, 2, 3, 4, 5];
 
-// Exibindo os valores e tipos usando a função typeof()
-console.log(`a) Tipo e valor da variável 'numero': ${typeof numero} ${numero}`);
-console.log(`b) Tipo e valor da variável 'texto': ${typeof texto} ${texto}`);
-console.log(`c) Tipo e valor da variável 'logico': ${typeof logico} ${logico}`);
-console.log(`d) Tipo e valor da variável 'pessoa': ${typeof pessoa} ${JSON.stringify(pessoa)}`);
-console.log(`e) Tipo e valor da variável 'numeros': ${typeof numeros} ${numeros}`);
+// Exibindo os valores e os tipos utilizando a função typeof()
+console.log(`a) Tipo e valor da variável 'variavelNumerica': ${typeof variavelNumerica} ${variavelNumerica}`);
+console.log(`b) Tipo e valor da variável 'variavelString': ${typeof variavelString} ${variavelString}`);
+console.log(`c) Tipo e valor da variável 'variavelLogica': ${typeof variavelLogica} ${variavelLogica}`);
+console.log(`d) Tipo e valor da variável 'objetoJson': ${typeof objetoJson} ${JSON.stringify(objetoJson)}`);
+console.log(`e) Tipo e valor da variável 'arrayNumerico': ${typeof arrayNumerico} ${arrayNumerico}`);
